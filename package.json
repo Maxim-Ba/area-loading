@@ -5,7 +5,9 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
-    "dist/**/*"
+    "dist/**/*",
+    "LICENSE",
+    "README.md"
   ],
   "scripts": {
     "build": "tsc",
@@ -15,6 +17,16 @@
   },
   "author": "Balashov Maksim",
   "license": "MIT",
+  "keywords": [
+    "loading",
+    "state",
+    "manager",
+    "typescript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Maxim-Ba/area-loading.git"
+  },
   "devDependencies": {
     "@types/jest": "^30.0.0",
     "@typescript-eslint/eslint-plugin": "^8.38.0",

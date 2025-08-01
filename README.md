@@ -1,14 +1,27 @@
-# area-loading
+# Area Loading
 
-Library for control loading state
+[![npm version](https://badge.fury.io/js/area-loading.svg)](https://badge.fury.io/js/area-loading)
 
-## Use example
+A lightweight library for managing loading states in different areas of your application.
+
+## Installation
+
+```bash
+npm install area-loading
+# or
+yarn add area-loading
+
+```
+
+## Usage
 
 ```typescript
 const isLoading$ = new BehaviorSubject<boolean>(false);
 
 const manager = new LoadingManager();
-const area = manager.addArea("area-name");
+const area = manager.addArea("area-name", {
+  initialLoadingState: isLoading$.value,
+});
 
 const loadingStateListener = area.onEmit((state) => {
   isLoading$.next(state);
